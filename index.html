@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+       #lupinha{
+            max-width: 20px;
+            max-height: 20px;
+        }
+        #butao-lupinha{
+            
+            border: none;
+            border-radius: 5px;
+        }
+        #input-navbar{
+            border-radius: 15px;
+            width:  459px;
+            height: 40px;
+            border: none;                    
+        }
+        #barradenav{
+            background-color: rgb(0, 112, 103);
+        }
+        #logo-carajas{
+            max-width: 161px;
+            max-height: 59px;
+        }
+        #navbargeral{
+            padding: 0 0 0 0;
+            border-radius: 30px;
+        }
+        #inputpesquisacompleto{
+            background-color: aliceblue;
+            border-radius: 5px;
+        }
+        #emcimadanavbar{
+           font-size: 11px;
+            color: white;
+            background-color: rgb(0, 112, 103);
+            padding-right: 30px;
+        }
+        #lista-emcimadanavbar a{
+            text-decoration: none;
+            color: white;
+            
+        }
+       
+        
+    </style>
+</head>
+<body>
+
+        <!--Criando a barra de navegação-->
+        <div id="emcimadanavbar">
+            <ul class="nav justify-content-end" id="lista-emcimadanavbar" >
+                <li class="nav-item">
+                    Compre pelo Whatsapp: <strong><a aria-current="page" href="#"> (11) 4003-2020</a></strong>
+                </li>
+                <li class="nav-item">
+                     Compre pelo telefone: <strong><a  href="#">| 4003-2020 |</a></strong>
+                </li>
+                <li class="nav-item">
+                  <strong><a href="#"> Para Empresas</a></strong>
+                </li>
+            </ul>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-light" id="navbargeral" >
+        <div class="container-fluid"  id="barradenav">
+            <!--colocando a logo na barra de naveg-->
+          <a class="navbar-brand" href="#"><img src="imagens/logo-carajas.png" alt="logo carajá" id="logo-carajas"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--Criando o botão de pesquisa-->
+          <form class="d-flex" role="search" id="inputpesquisacompleto">
+            <input id="input-navbar" class="form-control me-2" type="search" placeholder="Search" aria-label="O que você procura?" >
+            <button class="btn btn-light" type="submit" id="butao-lupinha" ><img src="imagens/lupa.png" alt="pesquisar" id="lupinha"></button>
+          </form>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
